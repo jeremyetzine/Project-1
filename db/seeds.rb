@@ -32,10 +32,10 @@ t30 = Team.create :name => 'Washington Wizards', :coach => 'Scott Brooks'
 
 
 Player.destroy_all
-a1 = Player.create :first_name => 'LeBron', :last_name => 'James', :number => 23, :image => 'https://www.nba.com/warriors/sites/warriors/files/ng1_8209.jpg'
+a1 = Player.create :first_name => 'LeBron', :last_name => 'James', :number => 23, :image => 'https://www.nba.com/lakers/sites/lakers/files/getty-images-1073987370.jpg'
 a2 = Player.create :first_name => 'James', :last_name => 'Harden', :number => 13, :image => 'https://www.nba.com/rockets/sites/rockets/files/gettyimages-1039446880.jpg'
-a3 = Player.create :first_name => 'Stephen', :last_name => 'Curry', :number => 30, :image => 'https://www.nba.com/lakers/sites/lakers/files/getty-images-1073987370.jpg'
-a4 = Player.create :first_name => 'LaMarcus', :last_name => 'Aldridge', :number => 12
+a3 = Player.create :first_name => 'Stephen', :last_name => 'Curry', :number => 30, :image => 'https://www.nba.com/warriors/sites/warriors/files/ng1_8209.jpg'
+a4 = Player.create :first_name => 'LaMarcus', :last_name => 'Aldridge', :number => 12, :image => 'https://www.nba.com/spurs/sites/spurs/files/getty-images-1039451772.jpg'
 a5 = Player.create :first_name => 'John', :last_name => 'Collins', :number => 20
 a6 = Player.create :first_name => 'Kyrie', :last_name => 'Irving', :number => 11
 a7 = Player.create :first_name => 'Spencer', :last_name => 'Dinwiddie', :number => 8
