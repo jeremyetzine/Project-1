@@ -1,0 +1,6 @@
+<h1><%= @shoe.brand %></h1>
+
+<% @shoe.players.each do |player| %>
+  <%= link_to player.first_name, player%>
+  <%= link_to player.last_name, player %>
+<% end %>

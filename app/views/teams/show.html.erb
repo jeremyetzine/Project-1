@@ -1,0 +1,11 @@
+<h1><%= @team.name %></h1>
+<h3><%= @team.coach %></h3>
+
+
+
+<% @team.players.each do |player| %>
+  <ul>
+    <%= link_to player.first_name, player%>
+    <%= link_to player.last_name, player %>
+  </ul>
+<% end %>

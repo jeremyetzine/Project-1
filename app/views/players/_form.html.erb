@@ -1,0 +1,24 @@
+<%= form_for @player do |f| %>
+  <%= f.label :first_name %>
+  <%= f.text_field :first_name, :autofocus => true, :required => true %>
+
+  <%= f.label :last_name %>
+  <%= f.text_field :last_name, :required => true %>
+
+  <%= f.label :number %>
+  <%= f.text_field :number %>
+
+  <%= f.label :team_id %>
+  <%= f.select :team_id, Team.pluck(:name, :id)%>
+
+  <%= f.label :position_id %>
+  <%= f.select :position_id, Position.pluck(:name, :id)%>
+
+  <%= f.label :shoe_id %>
+  <%= f.select :shoe_id, Shoe.pluck(:brand, :id)%>
+
+  <%= f.label :image %>
+  <%= f.url_field :image %>
+
+  <%= f.submit %>
+<% end %>

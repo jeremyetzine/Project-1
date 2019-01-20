@@ -1,0 +1,8 @@
+<h1><%= @position.name %></h1>
+
+<% @position.players.each do |player| %>
+  <ul>
+    <%= link_to player.first_name, player%>
+    <%= link_to player.last_name, player %>
+  </ul>
+<% end %>

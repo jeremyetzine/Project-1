@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NBAApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="container">
+      <nav>
+        <%= link_to 'All Teams', teams_path %>
+        <%= link_to 'All Players', players_path %>
+        <%= link_to 'All Shoes', shoes_path %>
+        <%= link_to 'All positions', positions_path %>
+      </nav>
+      <%= yield %>
+  </div>
+  </body>
+</html>

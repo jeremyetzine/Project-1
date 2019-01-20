@@ -1,0 +1,6 @@
+<h1>All Positions</h1>
+<% @positions.each do |position| %>
+ <ul>
+   <li><%= link_to position.name, position %></li>
+ </ul>
+<% end %>
