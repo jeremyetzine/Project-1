@@ -12,10 +12,13 @@
 #  team_id     :integer
 #  shoe_id     :integer
 #  position_id :integer
+#  ppg         :float
+#  trb         :float
+#  ast         :float
 #
 
 class Player < ApplicationRecord
-  belongs_to :team
-  belongs_to :shoe 
-  belongs_to :position
+  belongs_to :team, optional: true
+  belongs_to :shoe, optional: true
+  belongs_to :position, optional: true
 end

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_01_20_095848) do
+ActiveRecord::Schema.define(version: 2019_01_21_003639) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,6 +25,9 @@ ActiveRecord::Schema.define(version: 2019_01_20_095848) do
     t.integer "team_id"
     t.integer "shoe_id"
     t.integer "position_id"
+    t.float "ppg"
+    t.float "trb"
+    t.float "ast"
   end
 
   create_table "positions", force: :cascade do |t|
