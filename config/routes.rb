@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root :to => 'teams#index'
+  root :to => 'shoes#index'
   resources :teams
   resources :players
   resources :shoes
