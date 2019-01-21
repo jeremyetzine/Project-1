@@ -2,6 +2,9 @@
 
 <% @players.each do |player| %>
  <ul>
-   <li><%= link_to player.first_name, player %> <%= link_to player.last_name, player %></li>
+   <li>
+     <%= link_to player.first_name, player %> <%= link_to player.last_name, player %> &nbsp; &nbsp;
+     <%= player.ppg %> ppg
+   </li>
  </ul>
 <% end %>
