@@ -18,7 +18,7 @@
 #
 
 class Player < ApplicationRecord
-  belongs_to :team, optional: true
-  belongs_to :shoe, optional: true
-  belongs_to :position, optional: true
+  belongs_to :team
+  belongs_to :shoe
+  belongs_to :position
 end

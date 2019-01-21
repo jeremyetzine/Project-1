@@ -36,14 +36,16 @@ s1 = Shoe.create :brand => 'Jordan'
 s2 = Shoe.create :brand => 'Nike'
 s3 = Shoe.create :brand => 'Under Armour'
 s4 = Shoe.create :brand => 'Adidas'
+s5 = Shoe.create :brand => 'Anta'
+s6 = Shoe.create :brand => 'Puma'
 
 
 Position.destroy_all
-p1 = Position.create :name => 'Point Guard'
-p2 = Position.create :name => 'Shooting Guard'
-p3 = Position.create :name => 'Small Forward'
-p4 = Position.create :name => 'Power Forward'
-p5 = Position.create :name => 'Center'
+p1 = Position.create :name => 'Point Guard', :abbr => 'PG'
+p2 = Position.create :name => 'Shooting Guard', :abbr => 'SG'
+p3 = Position.create :name => 'Small Forward', :abbr => 'SF'
+p4 = Position.create :name => 'Power Forward', :abbr => 'PF'
+p5 = Position.create :name => 'Center', :abbr => 'C'
 
 
 Player.destroy_all
@@ -77,14 +79,35 @@ a27 = Player.create :first_name => 'Cameron', :last_name => 'Payne', :number => 
 a28 = Player.create :first_name => 'Rodney', :last_name => 'Hood', :number => 1, :image => 'https://www.nba.com/cavaliers/sites/cavaliers/files/7_182.jpg', :team_id => t6.id, :shoe_id => s2.id, :position_id => p3.id, :ppg => 12.9, :trb => 2.9, :ast => 2.0
 a29 = Player.create :first_name => 'Cedi', :last_name => 'Osman', :number => 16, :image => 'https://www.nba.com/cavaliers/sites/cavaliers/files/1_375.jpg', :team_id => t6.id, :shoe_id => s2.id, :position_id => p4.id, :ppg => 7.2, :trb => 3.1, :ast => 1.3
 a30 = Player.create :first_name => 'Triston', :last_name => 'Thompson', :number => 13, :image => 'https://www.nba.com/cavaliers/sites/cavaliers/files/11_121.jpg', :team_id => t6.id, :shoe_id => s2.id, :position_id => p5.id, :ppg => 9.2, :trb => 8.6, :ast => 0.9
-a31 = Player.create :first_name => '', :last_name => '', :number => , :image => '', :team_id => t7.id, :shoe_id => , :position_id => , :ppg => , :trb => , :ast =>
-a32 = Player.create :first_name => '', :last_name => '', :number => , :image => '', :team_id => t7.id, :shoe_id => , :position_id => , :ppg => , :trb => , :ast =>
-a33 = Player.create :first_name => '', :last_name => '', :number => , :image => '', :team_id => t7.id, :shoe_id => , :position_id => , :ppg => , :trb => , :ast =>
-a34 = Player.create :first_name => '', :last_name => '', :number => , :image => '', :team_id => t7.id, :shoe_id => , :position_id => , :ppg => , :trb => , :ast =>
-a35 = Player.create :first_name => '', :last_name => '', :number => , :image => '', :team_id => t7.id, :shoe_id => , :position_id => , :ppg => , :trb => , :ast =>
-a36 = Player.create :first_name => '', :last_name => '', :number => , :image => '', :team_id => t8.id, :shoe_id => , :position_id => , :ppg => , :trb => , :ast =>
-a37 = Player.create :first_name => '', :last_name => '', :number => , :image => '', :team_id => , :shoe_id => , :position_id => , :ppg => , :trb => , :ast =>
-a46 = Player.create :first_name => 'Stephen', :last_name => 'Curry', :number => 30, :image => 'https://www.nba.com/warriors/sites/warriors/files/ng1_8209.jpg', :team_id => t14.id, :shoe_id => s3.id, :position_id => p1.id, :ppg => 23.4, :trb => 4.5, :ast => 6.7
-a52 = Player.create :first_name => 'James', :last_name => 'Harden', :number => 13, :image => 'https://www.nba.com/rockets/sites/rockets/files/gettyimages-1039446880.jpg', :team_id => t14.id, :shoe_id => s4.id, :position_id => p2.id, :ppg => 23.7, :trb => 5.1, :ast => 6.1
+a31 = Player.create :first_name => 'Luka', :last_name => 'Doncic', :number => 77, :image => 'https://www.mavs.com/wp-content/uploads/2019/01/775222869_GSW_DAL_James057-732x1024.jpg', :team_id => t7.id, :shoe_id => s2.id, :position_id => p1.id, :ppg => 20.0, :trb => 6.7, :ast => 5.1
+a32 = Player.create :first_name => 'Wesley', :last_name => 'Matthews', :number => 23, :image => 'https://www.mavs.com/wp-content/uploads/2019/01/775222869_GSW_DAL_James059-683x1024.jpg', :team_id => t7.id, :shoe_id => s2.id, :position_id => p2.id, :ppg => 13.8, :trb => 3.1, :ast => 2.2
+a33 = Player.create :first_name => 'Harrison', :last_name => 'Barnes', :number => 40, :image => 'https://www.mavs.com/wp-content/uploads/2019/01/775222869_GSW_DAL_James065-732x1024.jpg', :team_id => t7.id, :shoe_id => s2.id, :position_id => p3.id, :ppg => 13.5, :trb => 4.9, :ast => 1.5
+a34 = Player.create :first_name => 'Maxi', :last_name => 'Kleber', :number => 42, :image => 'https://www.mavs.com/wp-content/uploads/2019/01/775222869_GSW_DAL_James197-732x1024.jpg', :team_id => t7.id, :shoe_id => s2.id, :position_id => p4.id, :ppg => 5.7, :trb => 3.5, :ast => 0.7
+a35 = Player.create :first_name => 'DeAndre', :last_name => 'Jordan', :number => 6, :image => 'https://www.mavs.com/wp-content/uploads/2019/01/775222869_GSW_DAL_James087-683x1024.jpg', :team_id => t7.id, :shoe_id => s2.id, :position_id => p5.id, :ppg => 9.5, :trb => 10.8, :ast => 0.8
+a36 = Player.create :first_name => 'Jamal', :last_name => 'Murray', :number => 27, :image => 'https://www.nba.com/nuggets/sites/nuggets/files/9.24.18_nuggets_ellwood_1437.jpg', :team_id => t8.id, :shoe_id => s4.id, :position_id => p1.id, :ppg => 14.5, :trb => 3.4, :ast => 3.2
+a37 = Player.create :first_name => 'Malik', :last_name => 'Beasley', :number => 25, :image => 'https://www.nba.com/nuggets/sites/nuggets/files/9.24.18_nuggets_ellwood_0285.jpg', :team_id => t8.id, :shoe_id => s2.id, :position_id => p2.id, :ppg => 5.8, :trb => 1.6, :ast => 0.8
+a38 = Player.create :first_name => 'Torrey', :last_name => 'Craig', :number => 3, :image => 'https://www.nba.com/nuggets/sites/nuggets/files/9.24.18_nuggets_ellwood_0359.jpg', :team_id => t8.id, :shoe_id => s2.id, :position_id => p3.id, :ppg => 5.1, :trb => 3.7, :ast => 0.8
+a39 = Player.create :first_name => 'Paul', :last_name => 'Millsap', :number => 4, :image => 'https://www.nba.com/nuggets/sites/nuggets/files/9.24.18_nuggets_ellwood_0906.jpg', :team_id => t8.id, :shoe_id => s2.id, :position_id => p4.id, :ppg => 14.2, :trb => 7.4, :ast => 2.3
+a40 = Player.create :first_name => 'Nikola', :last_name => 'Jokic', :number => 15, :image => 'https://www.nba.com/nuggets/sites/nuggets/files/9.24.18_nuggets_ellwood_0579.jpg', :team_id => t8.id, :shoe_id => s2.id, :position_id => p5.id, :ppg => 15.7, :trb => 9.3, :ast => 5.0
+a41 = Player.create :first_name => 'Reggie', :last_name => 'Jackson', :number => 1, :image => 'https://www.nba.com/pistons/sites/pistons/files/591_01072019_spurs_pistons_schwegler_0286.jpg', :team_id => t9.id, :shoe_id => s2.id, :position_id => p1.id, :ppg => 12.6, :trb => 3.0, :ast => 4.4
+a42 = Player.create :first_name => 'Bruce', :last_name => 'Brown', :number => 6, :image => 'https://www.nba.com/pistons/sites/pistons/files/680_01192019_kings_pistons_schwegler_0288.jpg', :team_id => t9.id, :shoe_id => s2.id, :position_id => p2.id, :ppg => 5.1, :trb => 2.9, :ast => 1.4
+a43 = Player.create :first_name => 'Reggie', :last_name => 'Bullock', :number => 25, :image => 'https://www.nba.com/pistons/sites/pistons/files/680_01192019_kings_pistons_schwegler_0132.jpg', :team_id => t9.id, :shoe_id => s2.id, :position_id => p3.id, :ppg => 6.5, :trb => 2.0, :ast => 1.1
+a44 = Player.create :first_name => 'Blake', :last_name => 'Griffin', :number => 23, :image => 'https://www.nba.com/pistons/sites/pistons/files/680_01192019_kings_pistons_schwegler_0095.jpg', :team_id => t9.id, :shoe_id => s1.id, :position_id => p4.id, :ppg => 21.8, :trb => 9.1, :ast => 4.4
+a45 = Player.create :first_name => 'Andre', :last_name => 'Drummond', :number => 0, :image => 'https://www.nba.com/pistons/sites/pistons/files/463_12192018_pistons_timberwolves_sherman_0982.jpg', :team_id => t9.id, :shoe_id => s1.id, :position_id => p5.id, :ppg => 13.8, :trb => 13.5, :ast => 1.1
+a46 = Player.create :first_name => 'Stephen', :last_name => 'Curry', :number => 30, :image => 'https://www.nba.com/warriors/sites/warriors/files/ng1_8209.jpg', :team_id => t10.id, :shoe_id => s3.id, :position_id => p1.id, :ppg => 23.4, :trb => 4.5, :ast => 6.7
+a47 = Player.create :first_name => 'Klay', :last_name => 'Thompson', :number => 11, :image => 'https://www.nba.com/warriors/sites/warriors/files/ng1_7076.jpg', :team_id => t10.id, :shoe_id => s5.id, :position_id => p2.id, :ppg => 19.4, :trb => 3.5, :ast => 2.3
+a48 = Player.create :first_name => 'Kevin', :last_name => 'Durant', :number => 35, :image => 'https://www.nba.com/warriors/sites/warriors/files/ng1_8029.jpg', :team_id => t10.id, :shoe_id => s2.id, :position_id => p3.id, :ppg => 27.2, :trb => 7.1, :ast => 4.0
+a49 = Player.create :first_name => 'Draymond', :last_name => 'Green', :number => 23, :image => 'https://www.nba.com/warriors/sites/warriors/files/ng1_6866.jpg', :team_id => t10.id, :shoe_id => s2.id, :position_id => p4.id, :ppg => 9.2, :trb => 7.0, :ast => 4.7
+a50 = Player.create :first_name => 'DeMarcus', :last_name => 'Cousins', :number => 0, :image => 'https://www.nba.com/warriors/sites/warriors/files/ng1_7773.jpg', :team_id => t10.id, :shoe_id => s6.id, :position_id => p5.id, :ppg => 21.5, :trb => 11.0, :ast => 3.2
+a51 = Player.create :first_name => 'Chris', :last_name => 'Paul', :number => 3, :image => 'https://www.nba.com/rockets/sites/rockets/files/org_dsc02271.jpg', :team_id => t11.id, :shoe_id => s1.id, :position_id => p1.id, :ppg => 18.6, :trb => 4.5, :ast => 9.7
+a52 = Player.create :first_name => 'James', :last_name => 'Harden', :number => 13, :image => 'https://www.nba.com/rockets/sites/rockets/files/gettyimages-1039446880.jpg', :team_id => t11.id, :shoe_id => s4.id, :position_id => p2.id, :ppg => 23.7, :trb => 5.1, :ast => 6.1
+a53 = Player.create :first_name => 'Eric', :last_name => 'Gordon', :number => 10, :image => 'https://www.nba.com/rockets/sites/rockets/files/gettyimages-1039497086.jpg', :team_id => t11.id, :shoe_id => s4.id, :position_id => p3.id, :ppg => 16.7, :trb => 2.5, :ast => 3.0
+a54 = Player.create :first_name => 'PJ', :last_name => 'Tucker', :number => 17, :image => 'https://www.nba.com/rockets/sites/rockets/files/gettyimages-1039468708.jpg', :team_id => t11.id, :shoe_id => s1.id, :position_id => p4.id, :ppg => 7.5, :trb => 5.7, :ast => 1.4
+a55 = Player.create :first_name => 'Clint', :last_name => 'Capela', :number => 15, :image => 'https://www.nba.com/rockets/sites/rockets/files/org_dsc02349.jpg', :team_id => t11.id, :shoe_id => s2.id, :position_id => p5.id, :ppg => 11.7, :trb => 8.8, :ast => 0.9
+a56 = Player.create :first_name => 'Darren', :last_name => 'Collison', :number => 2, :image => 'https://www.nba.com/pacers/sites/pacers/files/gettyimages-871876520_master.jpg', :team_id => t12.id, :shoe_id => s2.id, :position_id => p1.id, :ppg => 12.4, :trb => 2.6, :ast => 4.9
+a57 = Player.create :first_name => 'Victor', :last_name => 'Oladipo', :number => 4, :image => 'https://www.nba.com/pacers/sites/pacers/files/gettyimages-10401262200018.jpg', :team_id => t12.id, :shoe_id => s1.id, :position_id => p2.id, :ppg => 17.5, :trb => 4.6, :ast => 4.0
+a58 = Player.create :first_name => 'Bojan', :last_name => 'Bogdanovic', :number => 44, :image => 'https://www.nba.com/pacers/sites/pacers/files/jlh_6630.jpg', :team_id => t12.id, :shoe_id => s4.id, :position_id => p3.id, :ppg => 12.6, :trb => 3.3, :ast => 1.3
+a59 = Player.create :first_name => 'Thaddeus', :last_name => 'Young', :number => 21, :image => 'https://www.nba.com/pacers/sites/pacers/files/gettyimages-869194412_master0004.jpg', :team_id => t12.id, :shoe_id => s2.id, :position_id => p4.id, :ppg => 13.4, :trb => 5.9, :ast => 1.6
+a60 = Player.create :first_name => 'Myles', :last_name => 'Turner', :number => 33, :image => 'https://www.nba.com/pacers/sites/pacers/files/gettyimages-9027282820001.jpg', :team_id => t12.id, :shoe_id => s2.id, :position_id => p5.id, :ppg => 12.7, :trb => 6.6, :ast => 1.2
 a68 = Player.create :first_name => 'LeBron', :last_name => 'James', :number => 23, :image => 'https://www.nba.com/lakers/sites/lakers/files/getty-images-1073987370.jpg', :team_id => t14.id, :shoe_id => s2.id, :position_id => p3.id, :ppg => 27.2, :trb => 7.4, :ast => 7.2
 a134 = Player.create :first_name => 'LaMarcus', :last_name => 'Aldridge', :number => 12, :image => 'https://www.nba.com/spurs/sites/spurs/files/getty-images-1039451772.jpg', :team_id => t27.id, :shoe_id => s1.id, :position_id => p4.id, :ppg => 19.5, :trb => 8.3, :ast => 1.9

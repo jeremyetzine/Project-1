@@ -5,6 +5,7 @@
 
 <% @team.players.each do |player| %>
   <ul>
+    <%= player.position.abbr %>:
     <%= link_to player.first_name, player%>
     <%= link_to player.last_name, player %>
   </ul>

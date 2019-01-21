@@ -6,6 +6,7 @@
 #  name       :text
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
+#  abbr       :text
 #
 
 class Position < ApplicationRecord
