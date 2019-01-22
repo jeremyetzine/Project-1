@@ -1,8 +1,17 @@
 .container {
-  max-width: 960px;
+  max-width: 70vw;
   margin: 0 auto;
+  font-family: 'Karla', sans-serif;
 }
 
 .main {
   max-width: 100%;
+}
+
+.thumb {
+  max-width: 30%;
+}
+
+a {
+  text-decoration: none;
 }

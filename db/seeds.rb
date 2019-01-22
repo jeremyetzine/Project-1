@@ -32,13 +32,13 @@ t30 = Team.create :name => 'Washington Wizards', :coach => 'Scott Brooks'
 
 
 Shoe.destroy_all
-s1 = Shoe.create :brand => 'Jordan'
-s2 = Shoe.create :brand => 'Nike'
-s3 = Shoe.create :brand => 'Under Armour'
-s4 = Shoe.create :brand => 'Adidas'
-s5 = Shoe.create :brand => 'Anta'
-s6 = Shoe.create :brand => 'Puma'
-s7 = Shoe.create :brand => 'Big Baller Brand'
+s1 = Shoe.create :brand => 'Jordan', :image => '/assets/air-jordan.jpg'
+s2 = Shoe.create :brand => 'Nike', :image => '/assets/nike-kyrie.jpg'
+s3 = Shoe.create :brand => 'Under Armour', :image => '/assets/under-armour-curry.jpeg'
+s4 = Shoe.create :brand => 'Adidas', :image => '/assets/adidas-harden.jpg'
+s5 = Shoe.create :brand => 'Anta', :image => '/assets/anta-klay.png'
+s6 = Shoe.create :brand => 'Puma', :image => '/assets/puma-shoe.jpg'
+s7 = Shoe.create :brand => 'Big Baller Brand', :image => 'BBB-zo.jpg'
 
 
 Position.destroy_all

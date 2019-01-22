@@ -1,6 +1,7 @@
 class ShoesController < ApplicationController
   def index
     @shoes = Shoe.all
+    @players = Player.all
   end
 
   def show

@@ -6,6 +6,7 @@
 #  brand      :text
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
+#  image      :text
 #
 
 class Shoe < ApplicationRecord
