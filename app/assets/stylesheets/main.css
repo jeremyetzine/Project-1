@@ -7,31 +7,48 @@ body {
   margin: 0 auto;
   font-family: 'Karla', sans-serif;
   color: white;
+  background-color: blue;
+  text-align: center;
+}
+
+.index-list {
+  float: none;
+  display: inline-block;
+  width: 40%;
+  padding: 0 15px;
+  text-align: left;
+  margin-right: -4px;
+  vertical-align: top;
 }
 
 .main {
   max-width: 100%;
 }
 
-.thumb {
-  max-width: 30%;
+.indexImage {
+  width: 100%;
 }
 
-.thumb:hover {
+.indexImage:hover {
   border: 5px solid navy;
   /* border-radius: 1em; */
 }
 
-a {
+/* a {
   text-decoration: none;
   color: white;
 }
 
 a:hover {
-  color: green;
+  color: navy;
   text-decoration: none;
-}
+} */
 
 ul {
   list-style: none;
+}
+
+.court {
+  background-image: url(/assets/bball-court.png);
+  z-index: -1;
 }

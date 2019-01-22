@@ -1,9 +1,9 @@
 <h1>All Shoes</h1>
 
 <% @shoes.each do |shoe| %>
- <ul>
+ <ul class="index-list">
    <li>
-     <%= link_to image_tag(shoe.image, :class => 'thumb'), shoe %>
+     <%= link_to image_tag(shoe.image, :class => 'indexImage'), shoe %>
      <br>
      <%= link_to shoe.brand, shoe %>
     &nbsp;
@@ -14,5 +14,5 @@
     <% end %>
     Average PPG: <%= (a.sum/a.size).round(1) %>
    </li>
- </ul>
+  </ul>
 <% end %>
