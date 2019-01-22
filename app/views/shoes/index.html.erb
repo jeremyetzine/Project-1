@@ -1,19 +1,18 @@
 <h1>All Shoes</h1>
 
-
 <% @shoes.each do |shoe| %>
  <ul>
    <li>
+     <%= link_to image_tag(shoe.image, :class => 'thumb'), shoe %>
+     <br>
      <%= link_to shoe.brand, shoe %>
-
+    &nbsp;
     <% s = shoe.players.all %>
     <% a = [] %>
     <% s.each do |player| %>
       <% a << player.ppg %>
     <% end %>
-    <%= (a.sum/a.size).round(1) %>
-    <br>
-    <%= link_to image_tag(shoe.image, :class => 'thumb'), shoe %>
+    Average PPG: <%= (a.sum/a.size).round(1) %>
    </li>
  </ul>
 <% end %>

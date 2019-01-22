@@ -1,7 +1,12 @@
+body {
+  background-color: navy;
+}
+
 .container {
   max-width: 70vw;
   margin: 0 auto;
   font-family: 'Karla', sans-serif;
+  color: white;
 }
 
 .main {
@@ -12,6 +17,21 @@
   max-width: 30%;
 }
 
+.thumb:hover {
+  border: 5px solid navy;
+  /* border-radius: 1em; */
+}
+
 a {
   text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: green;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
 }

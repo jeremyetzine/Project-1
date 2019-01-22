@@ -32,13 +32,14 @@ t30 = Team.create :name => 'Washington Wizards', :coach => 'Scott Brooks'
 
 
 Shoe.destroy_all
-s1 = Shoe.create :brand => 'Jordan', :image => '/assets/air-jordan.jpg'
-s2 = Shoe.create :brand => 'Nike', :image => '/assets/nike-kyrie.jpg'
-s3 = Shoe.create :brand => 'Under Armour', :image => '/assets/under-armour-curry.jpeg'
-s4 = Shoe.create :brand => 'Adidas', :image => '/assets/adidas-harden.jpg'
-s5 = Shoe.create :brand => 'Anta', :image => '/assets/anta-klay.png'
-s6 = Shoe.create :brand => 'Puma', :image => '/assets/puma-shoe.jpg'
+s1 = Shoe.create :brand => 'Jordan', :image => 'air-jordan.jpg'
+s2 = Shoe.create :brand => 'Nike', :image => 'nike-kyrie4.jpg'
+s3 = Shoe.create :brand => 'Under Armour', :image => 'under-armour-curry.jpg'
+s4 = Shoe.create :brand => 'Adidas', :image => 'adidas-harden.jpg'
+s5 = Shoe.create :brand => 'Anta', :image => 'anta-klay.jpg'
+s6 = Shoe.create :brand => 'Puma', :image => 'puma-shoe.jpg'
 s7 = Shoe.create :brand => 'Big Baller Brand', :image => 'BBB-zo.jpg'
+s8 = Shoe.create :brand => 'Q4', :image => 'q4.jpg'
 
 
 Position.destroy_all
@@ -105,7 +106,7 @@ a52 = Player.create :first_name => 'James', :last_name => 'Harden', :number => 1
 a53 = Player.create :first_name => 'Eric', :last_name => 'Gordon', :number => 10, :image => 'https://www.nba.com/rockets/sites/rockets/files/gettyimages-1039497086.jpg', :team_id => t11.id, :shoe_id => s4.id, :position_id => p3.id, :ppg => 16.7, :trb => 2.5, :ast => 3.0
 a54 = Player.create :first_name => 'PJ', :last_name => 'Tucker', :number => 17, :image => 'https://www.nba.com/rockets/sites/rockets/files/gettyimages-1039468708.jpg', :team_id => t11.id, :shoe_id => s1.id, :position_id => p4.id, :ppg => 7.5, :trb => 5.7, :ast => 1.4
 a55 = Player.create :first_name => 'Clint', :last_name => 'Capela', :number => 15, :image => 'https://www.nba.com/rockets/sites/rockets/files/org_dsc02349.jpg', :team_id => t11.id, :shoe_id => s2.id, :position_id => p5.id, :ppg => 11.7, :trb => 8.8, :ast => 0.9
-a56 = Player.create :first_name => 'Darren', :last_name => 'Collison', :number => 2, :image => 'https://www.nba.com/pacers/sites/pacers/files/gettyimages-871876520_master.jpg', :team_id => t12.id, :shoe_id => s2.id, :position_id => p1.id, :ppg => 12.4, :trb => 2.6, :ast => 4.9
+a56 = Player.create :first_name => 'Darren', :last_name => 'Collison', :number => 2, :image => 'https://www.nba.com/pacers/sites/pacers/files/gettyimages-871876520_master.jpg', :team_id => t12.id, :shoe_id => s8.id, :position_id => p1.id, :ppg => 12.4, :trb => 2.6, :ast => 4.9
 a57 = Player.create :first_name => 'Victor', :last_name => 'Oladipo', :number => 4, :image => 'https://www.nba.com/pacers/sites/pacers/files/gettyimages-10401262200018.jpg', :team_id => t12.id, :shoe_id => s1.id, :position_id => p2.id, :ppg => 17.5, :trb => 4.6, :ast => 4.0
 a58 = Player.create :first_name => 'Bojan', :last_name => 'Bogdanovic', :number => 44, :image => 'https://www.nba.com/pacers/sites/pacers/files/jlh_6630.jpg', :team_id => t12.id, :shoe_id => s4.id, :position_id => p3.id, :ppg => 12.6, :trb => 3.3, :ast => 1.3
 a59 = Player.create :first_name => 'Thaddeus', :last_name => 'Young', :number => 21, :image => 'https://www.nba.com/pacers/sites/pacers/files/gettyimages-869194412_master0004.jpg', :team_id => t12.id, :shoe_id => s2.id, :position_id => p4.id, :ppg => 13.4, :trb => 5.9, :ast => 1.6
@@ -142,7 +143,7 @@ a89 = Player.create :first_name => 'Taj', :last_name => 'Gibson', :number => 67,
 a90 = Player.create :first_name => 'Karl-Anthony', :last_name => 'Towns', :number => 32, :image => 'https://www.nba.com/timberwolves/sites/timberwolves/files/getty-images-1081681812.jpg', :team_id => t18.id, :shoe_id => s2.id, :position_id => p5.id, :ppg => 21.7, :trb => 11.8, :ast => 2.4
 a91 = Player.create :first_name => 'Elfrid', :last_name => 'Payton', :number => 4, :image => 'https://www.nba.com/pelicans/sites/pelicans/files/getty-images-1084875256.jpg', :team_id => t19.id, :shoe_id => s2.id, :position_id => p1.id, :ppg => 11.1, :trb => 4.2, :ast => 6.4
 a92 = Player.create :first_name => 'Jrue', :last_name => 'Holiday', :number => 11, :image => 'https://www.nba.com/pelicans/sites/pelicans/files/getty-images-1084875270.jpg', :team_id => t19.id, :shoe_id => s2.id, :position_id => p2.id, :ppg => 15.4, :trb => 3.8, :ast => 6.4
-a93 = Player.create :first_name => "E'Twaun", :last_name => 'Moore', :number => 55, :image => 'https://www.nba.com/pelicans/sites/pelicans/files/getty-images-1084887264.jpg', :team_id => t19.id, :shoe_id => s2.id, :position_id => p3.id, :ppg => 8.0, :trb => 2.0, :ast => 1.8
+a93 = Player.create :first_name => "E'Twaun", :last_name => 'Moore', :number => 55, :image => 'https://www.nba.com/pelicans/sites/pelicans/files/getty-images-1084887264.jpg', :team_id => t19.id, :shoe_id => s8.id, :position_id => p3.id, :ppg => 8.0, :trb => 2.0, :ast => 1.8
 a94 = Player.create :first_name => 'Julius', :last_name => 'Randle', :number => 30, :image => 'https://www.nba.com/pelicans/sites/pelicans/files/getty-images-1084875810.jpg', :team_id => t19.id, :shoe_id => s2.id, :position_id => p4.id, :ppg => 14.6, :trb => 9.0, :ast => 2.7
 a95 = Player.create :first_name => 'Anthony', :last_name => 'Davis', :number => 23, :image => 'https://www.nba.com/pelicans/sites/pelicans/files/getty-images-1084875268.jpg', :team_id => t19.id, :shoe_id => s2.id, :position_id => p5.id, :ppg => 24.0, :trb => 10.6, :ast => 2.1
 a96 = Player.create :first_name => 'Emmanuel', :last_name => 'Mudiay', :number => 1, :image => 'https://www.nba.com/knicks/sites/knicks/files/190111-ind-gallery-8.jpg', :team_id => t20.id, :shoe_id => s3.id, :position_id => p1.id, :ppg => 11.5 , :trb => 3.0, :ast => 4.2
