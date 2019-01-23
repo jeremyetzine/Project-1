@@ -11,14 +11,15 @@ body {
   background-color: #e0f9ff;
   text-align: center;
   padding: 0;
-  border-radius: 1em;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
 }
 
 h1 {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 900;
   font-size: 440%;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   text-shadow: 0 3px 0 #4893D8;
 }
 
@@ -149,3 +150,31 @@ ul {
 
 
 /* Teams -------------------------------------------------------------------- */
+.team-container{
+  padding-bottom: 20px;
+}
+
+.team-list {
+  display: inline-block;
+  max-width: 15%;
+  padding: 0;
+  margin: 10px;
+}
+
+.team-item {
+  margin: 0 auto;
+}
+
+.logo {
+  max-width: 25%;
+  margin: 30px;
+}
+
+.thumbnail {
+  max-width: 100%;
+}
+
+table, th, td {
+  padding: 10px;
+  margin: 0 0 50px 45px;
+}

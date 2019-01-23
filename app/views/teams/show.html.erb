@@ -1,12 +1,28 @@
-<h1><%= @team.name %></h1>
-<h3><%= @team.coach %></h3>
+<div class="team-container">
+  <h1><%= @team.name %></h1>
+  <h3>Coach: <%= @team.coach %></h3>
 
+  <%= image_tag @team.thumbnail, :class => 'logo' %>
 
-
-<% @team.players.each do |player| %>
-  <ul>
-    <%= player.position.abbr %>:
-    <%= link_to player.first_name, player%>
-    <%= link_to player.last_name, player %>
-  </ul>
-<% end %>
+  <table>
+    <tr>
+      <th>Position</th>
+      <th>Name</th>
+      <th>Points per Game</th>
+      <th>Total Rebounds per Game</th>
+      <th>Assists per Game</th>
+      <th>Shoe</th>
+    </tr>
+    <% @team.players.each do |player| %>
+      <tr>
+        <td><%= player.position.abbr %>:</td>
+        <td><%= link_to player.first_name, player%>
+        <%= link_to player.last_name, player %></td>
+        <td><%= player.ppg %></td>
+        <td><%= player.trb %></td>
+        <td><%= player.ast %></td>
+        <td><%= link_to player.shoe.brand, player.shoe %></td>
+      </tr>
+    <% end %>
+  </table>
+</div>

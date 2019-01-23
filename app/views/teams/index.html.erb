@@ -1,7 +1,9 @@
 <h1>All Teams</h1>
-
+<hr>
 <% @teams.each do |team| %>
- <ul>
-   <li><%= link_to team.name, team %></li>
+ <ul class="team-list">
+   <li class="team-item">
+    <%= link_to image_tag(team.thumbnail, :class => 'thumbnail'), team %>
+   </li>
  </ul>
 <% end %>
