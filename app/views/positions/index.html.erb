@@ -1,34 +1,45 @@
-<h1>All Positions</h1>
-<div class="court">
-  <br>
-  <br>
-   <% @positions.each do |position| %>
-    <ul>
-      <li><%= link_to position.name, position %></li>
-    </ul>
-   <% end %>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+<div class="position-container">
+  <h1>All Positions</h1>
+  <div class="court">
+    <br>
+    <br>
+    <ul class="all-positions">
+     <% @positions.each do |position| %>
+     <div>
+        <%= link_to position.abbr, position, :class => position.abbr %>
+     </div>
+     <% end %>
+     </ul>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </div>
 </div>
