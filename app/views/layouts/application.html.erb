@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>NBAApp</title>
+    <title>NBA Shoe DataBase</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -12,7 +12,7 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-primary">
       <a class="navbar-brand" href="/">Home</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -27,40 +27,39 @@
           <a class="nav-link dropdown-toggle" href="/teams" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Teams
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="/teams/1051">Atlanta Hawks</a>
-            <a class="dropdown-item" href="/teams/1052">Boston Celtics</a>
-            <div class="dropdown-divider"></div>
+          <div class="dropdown-menu scrollable-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="/teams">All Teams</a>
+            <div class="dropdown-divider"></div>
+            <% Team.all.each do |team| %>
+              <%= link_to team.name, team, :class => 'dropdown-item' %>
+            <% end %>
           </div>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="/shoes" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Shoes
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="/shoes/170">Jordan</a>
-            <a class="dropdown-item" href="/shoes/171">Nike</a>
-            <div class="dropdown-divider"></div>
+          <div class="dropdown-menu scrollable-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="/shoes">All Shoes</a>
+            <div class="dropdown-divider"></div>
+            <% Shoe.all.each do |shoe| %>
+              <%= link_to shoe.brand, shoe, :class => 'dropdown-item' %>
+            <% end %>
           </div>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="/positions" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Positions
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="/positions/166">Point Guard</a>
-            <a class="dropdown-item" href="/positions/167">Shooting Guard</a>
-            <div class="dropdown-divider"></div>
+          <div class="dropdown-menu scrollable-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="/positions">All Positions</a>
+            <div class="dropdown-divider"></div>
+            <% Position.all.each do |position| %>
+              <%= link_to position.name, position, :class => 'dropdown-item'  %>    
+            <% end %>
           </div>
         </li>
       </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
     </div>
   </nav>
   <div class="container">

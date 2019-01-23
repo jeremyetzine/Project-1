@@ -1,18 +1,24 @@
-<h1>All Shoes</h1>
+<div class="shoepage">
 
-<% @shoes.each do |shoe| %>
- <ul class="index-list">
-   <li>
-     <%= link_to image_tag(shoe.image, :class => 'indexImage'), shoe %>
-     <br>
-     <%= link_to shoe.brand, shoe %>
-    &nbsp;
-    <% s = shoe.players.all %>
-    <% a = [] %>
-    <% s.each do |player| %>
-      <% a << player.ppg %>
-    <% end %>
-    Average PPG: <%= (a.sum/a.size).round(1) %>
-   </li>
-  </ul>
-<% end %>
+<h1>The Shoes</h1>
+
+  <% @shoes.each do |shoe| %>
+   <ul class="shoe-list">
+     <div class="shoe-item">
+       <li>
+         <%= link_to image_tag(shoe.image, :class => 'indexImage'), shoe %>
+         <br>
+         <%= link_to shoe.brand, shoe %>
+        &nbsp;
+        <% s = shoe.players.all %>
+        <% a = [] %>
+        <% s.each do |player| %>
+          <% a << player.ppg %>
+        <% end %>
+        Average PPG: <%= (a.sum/a.size).round(1) %>
+       </li>
+     </div>
+    </ul>
+  <% end %>
+
+</div>
