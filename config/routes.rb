@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   root :to => 'pages#home'
-  resources :teams
-  resources :players
-  resources :shoes
-  resources :positions
+  resources :teams, :only => [:index, :show]
+  resources :players, :only => [:index, :show]
+  resources :shoes, :only => [:index, :show]
+  resources :positions, :only => [:index, :show]
 end
