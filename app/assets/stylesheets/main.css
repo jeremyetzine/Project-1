@@ -88,7 +88,7 @@ ul {
 }
 
 .court {
-  background-image: url(/assets/bball-court.png);
+  background-image: url(bball-court.png);
   border: 5px solid white;
   border-radius: 1em;
   position: relative;
