@@ -1,4 +1,4 @@
-<div class="team-container">
+<div class="team-container <%= @team.abbr %>">
   <h1><%= @team.name %></h1>
   <h3>Coach: <%= @team.coach %></h3>
 
@@ -15,7 +15,7 @@
     </tr>
     <% @team.players.each do |player| %>
       <tr>
-        <td><%= player.position.abbr %>:</td>
+        <td><%= player.position.abbr %></td>
         <td><%= link_to player.first_name, player%> <%= link_to player.last_name, player %></td>
         <td><%= player.ppg %></td>
         <td><%= player.trb %></td>

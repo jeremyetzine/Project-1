@@ -1,0 +1,682 @@
+
+@mixin containers {
+  max-width: 70vw;
+  margin: 0 auto;
+  font-family: 'Karla', sans-serif;
+  color: #40403E;
+  background-color: #D9D8D2;
+  text-align: center;
+  padding: 0;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+  box-shadow:  0 0 100px black;
+}
+
+/* General ------------------------------------------------------------------ */
+body {
+  background-color: #8C827B;
+  .dal {
+    background-color: black;
+  }
+}
+
+
+h1 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 900;
+  font-size: 440%;
+  margin-bottom: 5px;
+  text-shadow: 0 3px 0 #BFBFBD;
+}
+
+a {
+  text-decoration: none;
+  color: #40403E;
+}
+
+a:hover {
+  color: #0D0D0D;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+th, td {
+  padding: 10px;
+}
+
+.scrollable-menu {
+  height: auto;
+  max-height: 500px;
+  overflow-x: hidden;
+}
+
+p {
+  font-size: 80%;
+}
+/* Home --------------------------------------------------------------------- */
+.home-container {
+  @include containers
+}
+
+.home-container {
+  padding: 20px;
+}
+
+.homeshoe {
+  max-width: 100%;
+  margin: 0;
+}
+
+
+/* Shoes -------------------------------------------------------------------- */
+.shoe-container {
+  @include containers
+}
+
+.shoe-container {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.shoe-list {
+  float: none;
+  display: inline-block;
+  width: 40%;
+  padding: 0 15px;
+  text-align: left;
+  margin-right: -4px;
+  vertical-align: top;
+}
+
+.shoe-item {
+  max-width: 100%;
+  font-size: 100%;
+  text-align: center;
+}
+
+.shoeIndexImage {
+  width: 100%;
+  border-radius: 1em;
+}
+
+.shoeIndexImage:hover {
+  border: 5px solid #e0f9ff;
+}
+
+.shoetable {
+  margin: 0 auto;
+}
+
+/* Positions ---------------------------------------------------------------- */
+.position-container {
+  @include containers
+}
+
+.position-container {
+  width: 100%;
+  background-color: #92D4F4;
+  z-index: -2;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.court {
+  background-image: url(bball-court.png);
+  border: 5px solid white;
+  border-radius: 1em;
+  position: relative;
+  max-width: 960px;
+}
+
+.PG, .SG, .SF, .PF, .C {
+  position: absolute;
+  font-weight: bold;
+  font-size: 200%;
+  z-index: 10;
+  color: black;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+.PG:hover, .SG:hover, .SF:hover, .PF:hover, .C:hover {
+  color: black;
+  background-color: white;
+  border: 4px solid white;
+}
+
+.PG {
+  bottom: 56%;
+  left: 38%;
+  width: 55px;
+}
+
+.SG {
+  bottom: 44%;
+  right: 14%;
+  width: 55px;
+}
+
+.SF {
+  bottom: 7%;
+  left: 1%;
+  width: 55px;
+}
+
+.PF {
+  bottom: 35%;
+  left: 27%;
+  width: 55px;
+}
+
+.C {
+  bottom: 10%;
+  right: 28%;
+  width: 50px;
+}
+
+.positiontable {
+  margin: 0 auto;
+}
+
+
+/* Players ------------------------------------------------------------------ */
+.players-container {
+  @include containers
+}
+
+.player-photo {
+  max-width: 100%;
+}
+
+.playerstable {
+  margin: 0 auto;
+}
+
+/* Teams -------------------------------------------------------------------- */
+.team-container {
+  @include containers
+}
+
+.team-container {
+  padding-bottom: 20px;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+}
+
+.team-list {
+  display: inline-block;
+  max-width: 15%;
+  padding: 0;
+  margin: 10px;
+}
+
+.team-item {
+  margin: 0 auto;
+}
+
+.logo {
+  max-width: 25%;
+  margin: 30px;
+}
+
+.thumbnail {
+  max-width: 100%;
+}
+
+.teamtable {
+  margin: 0 auto;
+}
+
+
+.atl {
+  background-color: #26282A;
+  color: #E03A3E;
+
+  h1 {
+    text-shadow: 0 3px 0 #C1D32F;
+  }
+
+  a {
+    color: #E03A3E;
+  }
+
+  a:hover {
+    color: #C1D32F;
+  }
+
+  .logo {
+    box-shadow: 0 0 10px #C1D32F;
+    border-radius: 10em;
+  }
+}
+
+.bos {
+  background-color: #007A33;
+  color:  #BA9653;
+
+  h1 {
+    text-shadow: 0 3px 0 #963821;
+  }
+
+  .logo {
+    max-width: 35%;
+    margin: 0;
+  }
+
+  a {
+    color: #BA9653;
+  }
+
+  a:hover {
+    color: #963821;
+  }
+
+}
+
+.bkln {
+  background-color: white;
+  color:  black;
+
+  h1 {
+    text-shadow: 0 3px 0 grey;
+  }
+
+  .logo {
+    max-width: 35%;
+    margin: 0;
+  }
+
+  a {
+    color: black;
+  }
+
+  a:hover {
+    color: grey;
+  }
+}
+
+.char {
+  background-color: #1D1160;
+  color:  #00788C;
+
+  h1 {
+    text-shadow: 0 3px 0 #A1A1A4;
+  }
+
+  .logo {
+    max-width: 35%;
+    margin: 0;
+  }
+
+  a {
+    color: #00788C;
+  }
+
+  a:hover {
+    color: #A1A1A4;
+  }
+}
+
+.chi {
+  background-color: #CE1141;
+  color:  black;
+
+  h1 {
+    text-shadow: 0 3px 3px white;
+  }
+
+  .logo {
+    max-width: 35%;
+    margin: 0;
+  }
+
+  a {
+    color: black;
+  }
+
+  a:hover {
+    color: white;
+  }
+}
+
+.cle {
+  background-color: #6F263D;
+  color:  #FFB81C;
+
+  h1 {
+    text-shadow: 0 7px 0 #041E42;
+  }
+
+  .logo {
+    max-width: 35%;
+    margin: 0;
+  }
+
+  a {
+    color: #FFB81C;
+  }
+
+  a:hover {
+    color: #041E42;
+  }
+}
+
+.dal {
+  background-color: #00538C;
+  color:  #B8C4CA;
+
+  h1 {
+    text-shadow: 0 3px 0 #002B5E;
+  }
+
+  .logo {
+    max-width: 35%;
+    margin: 0;
+  }
+
+  a {
+    color: #B8C4CA;
+  }
+
+  a:hover {
+    color: #002B5E;
+  }
+}
+
+.den {
+  background-color: #0E2240;
+  color:  #FEC524;
+
+  h1 {
+    text-shadow: 0 3px 0 #8B2131;
+  }
+
+  .logo {
+    max-width: 35%;
+    margin: 20px;
+    box-shadow: 0 0 100px #1D428A;
+    border-radius: 20em;
+  }
+
+  a {
+    color: #FEC524;
+  }
+
+  a:hover {
+    color: #8B2131;
+  }
+}
+
+.det {
+  background-color: #006BB6;
+  color:  white;
+
+  h1 {
+    text-shadow: 0 3px 0 #C8102E;
+  }
+
+  .logo {
+    max-width: 35%;
+    margin: 20px;
+    box-shadow: 0 0 100px #002D62;
+    border-radius: 20em;
+  }
+
+  a {
+    color: white;
+  }
+
+  a:hover {
+    color: #C8102E;
+  }
+}
+
+.gsw {
+  background-color: #FDB927;
+  color:  #006BB6;
+
+  h1 {
+    text-shadow: 0 3px 0 #26282A;
+  }
+
+  .logo {
+    max-width: 35%;
+    margin: 10px;
+  }
+
+  a {
+    color: #006BB6;
+  }
+
+  a:hover {
+    color: #26282A;
+  }
+}
+
+.hou {
+  background-color: black;
+  color:  #CE1141;
+
+  h1 {
+    text-shadow: 0 3px 0 #C4CED4;
+  }
+
+  .logo {
+    max-width: 35%;
+    margin: 0;
+  }
+
+  a {
+    color: #CE1141;
+  }
+
+  a:hover {
+    color: #C4CED4;
+  }
+}
+
+.ind {
+  background-color: #BEC0C2;
+  color:  #002D62;
+
+  h1 {
+    text-shadow: 0 3px 0 #FDBB30;
+  }
+
+  .logo {
+    max-width: 35%;
+    margin: 20px;
+    box-shadow: 0 0 10px #002D62  ;
+    border-radius: 20em;
+  }
+
+  a {
+    color: #002D62;
+  }
+
+  a:hover {
+    color: white;
+  }
+}
+
+.lac {
+  background-color: #BEC0C2;
+  color:  #1D42BA;
+
+  h1 {
+    text-shadow: 0 3px 0 #C8102E;
+  }
+
+  .logo {
+    max-width: 35%;
+    margin: 20px;
+  }
+
+  a {
+    color: #1D42BA;
+  }
+
+  a:hover {
+    color: #C8102E;
+  }
+}
+
+.lal {
+  background-color: #552583;
+  color:  #FDB927;
+
+  h1 {
+    text-shadow: 0 3px 0 #000000;
+  }
+
+  .logo {
+    max-width: 35%;
+    margin: 20px;
+  }
+
+  a {
+    color: #FDB927;
+  }
+
+  a:hover {
+    color: #ffffff;
+  }
+}
+
+.mem {
+  background-color: #5D76A9;
+  color:  #12173F;
+
+  h1 {
+    text-shadow: 0 3px 0 #F5B112;
+  }
+
+  .logo {
+    max-width: 35%;
+    margin: 20px;
+  }
+
+  a {
+    color: #12173F;
+  }
+
+  a:hover {
+    color: #F5B112;
+  }
+}
+
+.mia {
+  background-color: #F9A01B;
+  color:  #98002E;
+
+  h1 {
+    text-shadow: 0 3px 0 #000000;
+  }
+
+  .logo {
+    max-width: 35%;
+    margin: 20px;
+  }
+
+  a {
+    color: #98002E;
+  }
+
+  a:hover {
+    color: #000000;
+  }
+}
+
+.mil {
+  background-color: #EEE1C6;
+  color:  #00471B;
+
+  h1 {
+    text-shadow: 0 3px 0 #0077C0;
+  }
+
+  .logo {
+    max-width: 35%;
+    margin: 20px;
+  }
+
+  a {
+    color: #00471B;
+  }
+
+  a:hover {
+    color: #0077C0;
+  }
+}
+
+.min {
+  background-color: #236192;
+  color:  #0C2340;
+
+  h1 {
+    text-shadow: 0 3px 0 #78BE20;
+  }
+
+  .logo {
+    max-width: 50%;
+    margin: -50px;
+  }
+
+  a {
+    color: #0C2340;
+  }
+
+  a:hover {
+    color: #78BE20;
+  }
+}
+
+.nop {
+  background-color: #85714D;
+  color:  #0C2340;
+
+  h1 {
+    text-shadow: 0 3px 0 #C8102E;
+  }
+
+  .logo {
+    max-width: 35%;
+    margin: 20px;
+  }
+
+  a {
+    color: #0C2340;
+  }
+
+  a:hover {
+    color: #C8102E;
+  }
+}
+
+.nyk {
+  background-color: #BEC0C2;
+  color:  #006BB6;
+
+  h1 {
+    text-shadow: 0 3px 0 #F58426;
+  }
+
+  .logo {
+    max-width: 35%;
+    margin: 20px;
+  }
+
+  a {
+    color: #006BB6;
+  }
+
+  a:hover {
+    color: #F58426;
+  }
+}
