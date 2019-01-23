@@ -37,13 +37,19 @@ ul {
   list-style: none;
 }
 
+th, td {
+  padding: 10px;
+}
+
 .scrollable-menu {
   height: auto;
   max-height: 500px;
   overflow-x: hidden;
 }
 
-
+p {
+  font-size: 80%;
+}
 /* Home --------------------------------------------------------------------- */
 .home-container {
   padding: 20px;
@@ -87,6 +93,9 @@ ul {
   border: 5px solid #e0f9ff;
 }
 
+.shoetable {
+  margin-left: 50px;
+}
 
 /* Positions ---------------------------------------------------------------- */
 .position-container {
@@ -153,12 +162,19 @@ ul {
   width: 50px;
 }
 
+.positiontable {
+  margin: 10px;
+}
+
 
 /* Players ------------------------------------------------------------------ */
 .player-photo {
   max-width: 100%;
 }
 
+.playerstable {
+  margin: 10px;
+}
 
 /* Teams -------------------------------------------------------------------- */
 .team-container{
@@ -185,7 +201,6 @@ ul {
   max-width: 100%;
 }
 
-table, th, td {
-  padding: 10px;
+.teamtable {
   margin: 0 0 50px 45px;
 }

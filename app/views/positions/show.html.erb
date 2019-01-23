@@ -1,8 +1,24 @@
 <h1><%= @position.name %>s</h1>
+<p>Ordered by PPG</p>
+<hr>
 
-<% @position.players.each do |player| %>
-  <ul>
-    <%= link_to player.first_name, player%>
-    <%= link_to player.last_name, player %>
-  </ul>
-<% end %>
+<table class="positiontable">
+  <tr>
+    <th>Name</th>
+    <th>Team</th>
+    <th>Points per Game</th>
+    <th>Total Rebounds per Game</th>
+    <th>Assists per Game</th>
+    <th>Shoe</th>
+  </tr>
+  <% @players.each do |player| %>
+    <tr>
+      <td><%= link_to player.first_name, player %> <%= link_to player.last_name, player %></td>
+      <td><%= link_to player.team.name, player.team %></td>
+      <td><%= player.ppg %></td>
+      <td><%= player.trb %></td>
+      <td><%= player.ast %></td>
+      <td><%= link_to player.shoe.brand, player.shoe %></td>
+    </tr>
+  <% end %>
+</table>

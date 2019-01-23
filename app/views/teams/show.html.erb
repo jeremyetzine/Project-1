@@ -4,7 +4,7 @@
 
   <%= image_tag @team.thumbnail, :class => 'logo' %>
 
-  <table>
+  <table class="teamtable">
     <tr>
       <th>Position</th>
       <th>Name</th>
@@ -16,8 +16,7 @@
     <% @team.players.each do |player| %>
       <tr>
         <td><%= player.position.abbr %>:</td>
-        <td><%= link_to player.first_name, player%>
-        <%= link_to player.last_name, player %></td>
+        <td><%= link_to player.first_name, player%> <%= link_to player.last_name, player %></td>
         <td><%= player.ppg %></td>
         <td><%= player.trb %></td>
         <td><%= player.ast %></td>

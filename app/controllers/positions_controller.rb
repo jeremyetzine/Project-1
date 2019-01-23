@@ -5,6 +5,7 @@ class PositionsController < ApplicationController
 
   def show
     @position = Position.find params[:id]
+    @players = @position.players.order(:ppg => :desc)
   end
 
   def edit
