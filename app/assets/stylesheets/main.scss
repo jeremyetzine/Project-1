@@ -35,7 +35,7 @@ a {
 }
 
 a:hover {
-  color: #0D0D0D;
+  color: white;
   text-decoration: none;
 }
 
@@ -104,7 +104,7 @@ p {
 }
 
 .shoeIndexImage:hover {
-  border: 5px solid #e0f9ff;
+  border: 5px solid #D9D8D2;
 }
 
 .shoetable {
@@ -117,13 +117,14 @@ p {
 }
 
 .position-container {
-  width: 100%;
-  background-color: #92D4F4;
+  width: 960px;
+  background-color: #8C827B;
   z-index: -2;
   margin: 0 auto;
   text-align: center;
   padding-top: 0;
   padding-bottom: 0;
+  box-shadow: none;
 }
 
 .court {
@@ -132,6 +133,8 @@ p {
   border-radius: 1em;
   position: relative;
   max-width: 960px;
+  box-shadow:  0 0 100px black;
+  margin-top: 30px;
 }
 
 .PG, .SG, .SF, .PF, .C {
