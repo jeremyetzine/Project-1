@@ -6,7 +6,7 @@ t4 = Team.create :name => 'Charlotte Hornets', :coach => 'James Borrego', :thumb
 t5 = Team.create :name => 'Chicago Bulls', :coach => 'Jim Boylen', :thumbnail => 'bullslogo.png', :abbr => 'chi'
 t6 = Team.create :name => 'Cleveland Cavaliers', :coach => 'Larry Drew', :thumbnail => 'cavslogo.png', :abbr => 'cle'
 t7 = Team.create :name => 'Dallas Mavericks', :coach => 'Rick Carlisle', :thumbnail => 'mavslogo.png', :abbr => 'dal'
-t8 = Team.create :name => 'Denver Nuggets', :coach => 'Michael Malone', :thumbnail => 'nuggetslogo.png', :abbr => ''
+t8 = Team.create :name => 'Denver Nuggets', :coach => 'Michael Malone', :thumbnail => 'nuggetslogo.png', :abbr => 'den'
 t9 = Team.create :name => 'Detroit Pistons', :coach => 'Dwane Casey', :thumbnail => 'pistonslogo.png', :abbr => 'det'
 t10 = Team.create :name => 'Golden State Warriors', :coach => 'Steve Kerr', :thumbnail => 'warriorslogo.png', :abbr => 'gsw'
 t11 = Team.create :name => 'Houston Rockets', :coach => "Mike D'Antoni", :thumbnail => 'rocketslogo.png', :abbr => 'hou'
