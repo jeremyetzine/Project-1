@@ -6,7 +6,7 @@
     <ul class="all-positions">
      <% @positions.each do |position| %>
      <div>
-        <%= link_to position.abbr, position, :class => position.abbr %>
+        <%= link_to position.abbr, position, :class => position.abbr, :title => position.name %>
      </div>
      <% end %>
      </ul>

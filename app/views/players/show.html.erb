@@ -1,10 +1,32 @@
-<div class="players-container">
-  <h1> <%= @player.first_name %> <%= @player.last_name %> #<%= @player.number %></h1>
+<div class="playersshow-container">
+  <h1>  <%= @player.first_name %> <%= @player.last_name  %> #<%= @player.number %>
+    <%= link_to image_tag(@player.team.thumbnail, :class => 'playersteamthumb', :alt => @player.team.name), @player.team %>
+  </h1>
+  <hr class="hr">
+  <table class="playersinfotable">
+    <tr>
+      <th>Preferred Shoe:</th>
+      <th>Position:</th>
+    </tr>
+    <tr>
+      <td><%= link_to @player.shoe.brand, @player.shoe %></td>
+      <td><%= link_to @player.position.name, @player.position %></td>
+    </tr>
+  </table>
+  <%= image_tag @player.image, :class => 'player-photo', :alt => @player.last_name %>
 
-  <%= image_tag @player.image, :class => 'player-photo' %>
 
-  <div class="controls">
-    <%= link_to 'Edit player', edit_player_path(@player) %>
-    <%= link_to 'Delete player', @player, :method => 'delete' %>
-  </div>
+  <h3>Career Averages</h3>
+  <table class="playersstatstable">
+    <tr>
+      <th>PPG:</th>
+      <th>TRB:</th>
+      <th>AST:</th>
+    </tr>
+    <tr>
+      <td><%= @player.ppg %></td>
+      <td><%= @player.trb %></td>
+      <td><%= @player.ast %></td>
+    </tr>
+  </table>
 </div>

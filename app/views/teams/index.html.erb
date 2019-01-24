@@ -4,7 +4,7 @@
   <% @teams.each do |team| %>
    <ul class="team-list">
      <li class="team-item">
-      <%= link_to image_tag(team.thumbnail, :class => 'thumbnail', :alt => team.name), team %>
+      <%= link_to image_tag(team.thumbnail, :class => 'thumbnail', :alt => team.name, :title => team.name), team %>
      </li>
    </ul>
   <% end %>
