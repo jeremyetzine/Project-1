@@ -273,7 +273,6 @@ p {
   margin: 0 auto;
 }
 
-
 .atl {
   background-color: #26282A;
   color: #E03A3E;
@@ -718,5 +717,231 @@ p {
 
   a:hover {
     color: #F58426;
+  }
+}
+
+.okc {
+  background-color: #007AC1;
+  color:  #002D62;
+
+  h1 {
+    text-shadow: 0 3px 0 #EF3B24;
+  }
+
+  .logo {
+    max-width: 35%;
+    margin: 20px;
+  }
+
+  a {
+    color: #002D62;
+  }
+
+  a:hover {
+    color: #EF3B24;
+  }
+}
+
+.orl {
+  background-color: #C4CED4;
+  color:  #0077C0;
+
+  h1 {
+    text-shadow: 0 3px 0 #000000;
+  }
+
+  .logo {
+    max-width: 35%;
+    margin: 20px;
+  }
+
+  a {
+    color: #0077C0;
+  }
+
+  a:hover {
+    color: #000000;
+  }
+}
+
+.phi {
+  background-color: #006BB6;
+  color:  #002B5C;
+
+  h1 {
+    text-shadow: 0 3px 0 #ED174C;
+  }
+
+  .logo {
+    max-width: 35%;
+    margin: 20px;
+    box-shadow: 0 0 60px #ED174C;
+    border-radius: 20em;
+  }
+
+  a {
+    color: #002B5C;
+  }
+
+  a:hover {
+    color: #ED174C;
+  }
+}
+
+.pho {
+  background-color: #1D1160;
+  color:  #E56020;
+
+  h1 {
+    text-shadow: 0 3px 0 #000000;
+  }
+
+  .logo {
+    max-width: 35%;
+    margin: 20px;
+  }
+
+  a {
+    color: #E56020;
+  }
+
+  a:hover {
+    color: #63727A;
+  }
+}
+
+.por {
+  background-color: #000000;
+  color:  #E03A3E;
+
+  h1 {
+    text-shadow: 0 3px 0 #fff;
+  }
+
+  .logo {
+    max-width: 35%;
+    margin: 20px;
+  }
+
+  a {
+    color: #E03A3E;
+  }
+
+  a:hover {
+    color: #ccc;
+  }
+}
+
+.sac {
+  background-color: #5A2D81;
+  color:  #000;
+
+  h1 {
+    text-shadow: 0 3px 0 #63727A;
+  }
+
+  .logo {
+    max-width: 35%;
+    margin: 20px;
+  }
+
+  a {
+    color: #000;
+  }
+
+  a:hover {
+    color: #63727A;
+  }
+}
+
+.sas {
+  background-color: #C4CED4;
+  color:  #000;
+
+  h1 {
+    text-shadow: 0 3px 0 #63727A;
+  }
+
+  .logo {
+    max-width: 35%;
+    margin: 20px;
+  }
+
+  a {
+    color: #000;
+  }
+
+  a:hover {
+    color: #63727A;
+  }
+}
+
+.tor {
+  background-color: #CE1141;
+  color:  #000;
+
+  h1 {
+    text-shadow: 0 3px 0 #A1A1A4;
+  }
+
+  .logo {
+    max-width: 35%;
+    margin: 20px;
+    box-shadow: 0 0 60px #000;
+    border-radius: 20em;
+  }
+
+  a {
+    color: #000;
+  }
+
+  a:hover {
+    color: #A1A1A4;
+  }
+}
+
+.utah {
+  background-color: #F9A01B;
+  color:  #00471B;
+
+  h1 {
+    text-shadow: 0 3px 0 #002B5C;
+  }
+
+  .logo {
+    max-width: 35%;
+    margin: 20px;
+  }
+
+  a {
+    color: #00471B;
+  }
+
+  a:hover {
+    color: #002B5C;
+  }
+}
+
+.was {
+  background-color: #002B5C;
+  color:  #E31837;
+
+  h1 {
+    text-shadow: 0 3px 0 #C4CED4;
+  }
+
+  .logo {
+    max-width: 35%;
+    margin: 20px;
+    box-shadow: 0 0 60px #E31837;
+    border-radius: 20em;
+  }
+
+  a {
+    color: #E31837;
+  }
+
+  a:hover {
+    color: #C4CED4;
   }
 }
