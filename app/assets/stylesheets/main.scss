@@ -113,6 +113,12 @@ p {
   margin: 0 auto;
 }
 
+.shoelogo {
+  max-width: 90px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
 /* Positions ---------------------------------------------------------------- */
 .position-container {
   @include containers

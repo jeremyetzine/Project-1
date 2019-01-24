@@ -32,14 +32,14 @@ t30 = Team.create :name => 'Washington Wizards', :coach => 'Scott Brooks', :thum
 
 
 Shoe.destroy_all
-s1 = Shoe.create :brand => 'Jordan', :image => 'air-jordan.jpg'
-s2 = Shoe.create :brand => 'Nike', :image => 'nike-kyrie4.jpg'
-s3 = Shoe.create :brand => 'Under Armour', :image => 'under-armour-curry.jpg'
-s4 = Shoe.create :brand => 'Adidas', :image => 'adidas-harden.jpg'
-s5 = Shoe.create :brand => 'Anta', :image => 'anta-klay.jpg'
-s6 = Shoe.create :brand => 'Puma', :image => 'puma-shoe.jpg'
-s7 = Shoe.create :brand => 'Big Baller Brand', :image => 'BBB-zo.jpg'
-s8 = Shoe.create :brand => 'Q4', :image => 'q4.jpg'
+s1 = Shoe.create :brand => 'Jordan', :image => 'air-jordan.jpg', :logo => 'jordanlogo.png'
+s2 = Shoe.create :brand => 'Nike', :image => 'nike-kyrie4.jpg', :logo => 'nikelogo.png'
+s3 = Shoe.create :brand => 'Under Armour', :image => 'under-armour-curry.jpg', :logo => 'underarmourlogo.png'
+s4 = Shoe.create :brand => 'Adidas', :image => 'adidas-harden.jpg', :logo => 'adidaslogo.png'
+s5 = Shoe.create :brand => 'Anta', :image => 'anta-klay.jpg', :logo => 'Antalogo.png'
+s6 = Shoe.create :brand => 'Puma', :image => 'puma-shoe.jpg', :logo => 'pumalogo.png'
+s7 = Shoe.create :brand => 'Big Baller Brand', :image => 'BBB-zo.jpg', :logo => 'bbblogo.jpg'
+s8 = Shoe.create :brand => 'Q4', :image => 'q4.jpg', :logo => 'a4logo.png'
 
 
 Position.destroy_all
