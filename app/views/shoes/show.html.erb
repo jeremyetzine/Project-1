@@ -1,6 +1,12 @@
 <div class="shoe-container">
   <h1>Wears <%= @shoe.brand %></h1>
-  <p>Ordered by PPG</p>
+  <p>
+    Ordered by PPG &nbsp &nbsp &nbsp
+  </p>
+  <p>
+    Total Players: <%= @shoe.players.size %> &nbsp &nbsp &nbsp
+    Percentage of Total Players: <%= (@shoe.players.size.to_f / @allplayers.size.to_f * 100).round(1) %>%
+  </p>
   <hr>
 
   <table class="shoetable">

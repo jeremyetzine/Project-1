@@ -7,6 +7,7 @@ class ShoesController < ApplicationController
   def show
     @shoe = Shoe.find params[:id]
     @players = @shoe.players.order(:ppg => :desc)
+    @allplayers = Player.all
   end
 
   def edit
